@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Met Link View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MetLinkViewController" customModule="BusFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kJz-Dg-KCE">
+                                <rect key="frame" x="62" y="44" width="250" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="5sw-LK-6M3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="X9L-8K-WHa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Farmers"/>
+                                    <segment title="Top Shop"/>
+                                    <segment title="Willis St"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onBusStopSegControl:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="sY6-I1-Nrp"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-ZO-TaK">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="nup-Cm-k3m" detailTextLabel="bMH-FF-1Js" style="IBUITableViewCellStyleSubtitle" id="YMm-Q0-Qki">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YMm-Q0-Qki" id="bcp-CO-K0F">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nup-Cm-k3m">
+                                                    <rect key="frame" x="15" y="5" width="33" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bMH-FF-1Js">
+                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="b3r-Mk-dNi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DO7-bG-u6f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kJz-Dg-KCE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3P4-NJ-lfm"/>
+                            <constraint firstItem="BuS-ZO-TaK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5cE-Dz-Kfr"/>
+                            <constraint firstItem="BuS-ZO-TaK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="BG6-I5-F1Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BuS-ZO-TaK" secondAttribute="bottom" id="Rhr-YT-eHw"/>
+                            <constraint firstItem="BuS-ZO-TaK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WEX-Vs-Zpb"/>
+                            <constraint firstItem="kJz-Dg-KCE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="fmz-bt-G94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="busStopSegmentControl" destination="kJz-Dg-KCE" id="kAA-TA-AhD"/>
+                        <outlet property="busTimesTableView" destination="BuS-ZO-TaK" id="T0k-Hc-SHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

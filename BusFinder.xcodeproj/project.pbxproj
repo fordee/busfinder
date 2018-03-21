@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492C23062004415D00F1937E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492C23042004415D00F1937E /* Interface.storyboard */; };
+		492C23082004415D00F1937E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C23072004415D00F1937E /* Assets.xcassets */; };
+		492C230F2004415D00F1937E /* BusFinder Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 492C230E2004415D00F1937E /* BusFinder Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		492C23142004415D00F1937E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C23132004415D00F1937E /* InterfaceController.swift */; };
+		492C23162004415D00F1937E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C23152004415D00F1937E /* ExtensionDelegate.swift */; };
+		492C23182004415D00F1937E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C23172004415D00F1937E /* NotificationController.swift */; };
+		492C231A2004415D00F1937E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492C23192004415D00F1937E /* Assets.xcassets */; };
+		492C231F2004415D00F1937E /* BusFinder Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 492C23022004415D00F1937E /* BusFinder Watch App.app */; };
+		492C2329200441FF00F1937E /* MetLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C2328200441FF00F1937E /* MetLinkService.swift */; };
+		492C232B2004423400F1937E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C232A2004423400F1937E /* WebService.swift */; };
+		492C232D20055AC800F1937E /* MetLinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C232C20055AC800F1937E /* MetLinkData.swift */; };
+		492C232F2005771500F1937E /* BusTimesRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C232E2005771500F1937E /* BusTimesRowController.swift */; };
+		492C233020057ADF00F1937E /* MetLinkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D1DF41FE2E1F500021078 /* MetLinkApi.swift */; };
+		492C2332200581C400F1937E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C2331200581C400F1937E /* Helpers.swift */; };
+		492C23332005828F00F1937E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C2331200581C400F1937E /* Helpers.swift */; };
+		492C23352006A0D200F1937E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492C23342006A0D200F1937E /* ComplicationController.swift */; };
+		492C23372006A3DE00F1937E /* BusFinder.ckcomplication in Resources */ = {isa = PBXBuildFile; fileRef = 492C23362006A3DE00F1937E /* BusFinder.ckcomplication */; };
+		492D1DD51FE2DE8400021078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D1DD41FE2DE8400021078 /* AppDelegate.swift */; };
+		492D1DD71FE2DE8400021078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D1DD61FE2DE8400021078 /* ViewController.swift */; };
+		492D1DDA1FE2DE8400021078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D1DD81FE2DE8400021078 /* Main.storyboard */; };
+		492D1DDC1FE2DE8400021078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492D1DDB1FE2DE8400021078 /* Assets.xcassets */; };
+		492D1DDF1FE2DE8400021078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D1DDD1FE2DE8400021078 /* LaunchScreen.storyboard */; };
+		492D1DEA1FE2DE8500021078 /* BusFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D1DE91FE2DE8500021078 /* BusFinderTests.swift */; };
+		492D1DF51FE2E1F500021078 /* MetLinkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D1DF41FE2E1F500021078 /* MetLinkApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		492C23102004415D00F1937E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492D1DC91FE2DE8400021078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492C230D2004415D00F1937E;
+			remoteInfo = "BusFinder Watch App Extension";
+		};
+		492C231D2004415D00F1937E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492D1DC91FE2DE8400021078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492C23012004415D00F1937E;
+			remoteInfo = "BusFinder Watch App";
+		};
+		492D1DE61FE2DE8500021078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492D1DC91FE2DE8400021078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492D1DD01FE2DE8400021078;
+			remoteInfo = BusFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		492C23232004415D00F1937E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				492C230F2004415D00F1937E /* BusFinder Watch App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492C23272004415D00F1937E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				492C231F2004415D00F1937E /* BusFinder Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		492C23022004415D00F1937E /* BusFinder Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BusFinder Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492C23052004415D00F1937E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		492C23072004415D00F1937E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492C23092004415D00F1937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C230E2004415D00F1937E /* BusFinder Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BusFinder Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492C23132004415D00F1937E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		492C23152004415D00F1937E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		492C23172004415D00F1937E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		492C23192004415D00F1937E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492C231B2004415D00F1937E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492C231C2004415D00F1937E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		492C2328200441FF00F1937E /* MetLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetLinkService.swift; sourceTree = "<group>"; };
+		492C232A2004423400F1937E /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		492C232C20055AC800F1937E /* MetLinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetLinkData.swift; sourceTree = "<group>"; };
+		492C232E2005771500F1937E /* BusTimesRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusTimesRowController.swift; sourceTree = "<group>"; };
+		492C2331200581C400F1937E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		492C23342006A0D200F1937E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		492C23362006A3DE00F1937E /* BusFinder.ckcomplication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BusFinder.ckcomplication; sourceTree = "<group>"; };
+		492D1DD11FE2DE8400021078 /* BusFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492D1DD41FE2DE8400021078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492D1DD61FE2DE8400021078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492D1DD91FE2DE8400021078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492D1DDB1FE2DE8400021078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492D1DDE1FE2DE8400021078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		492D1DE01FE2DE8400021078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492D1DE51FE2DE8500021078 /* BusFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492D1DE91FE2DE8500021078 /* BusFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusFinderTests.swift; sourceTree = "<group>"; };
+		492D1DEB1FE2DE8500021078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492D1DF41FE2E1F500021078 /* MetLinkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetLinkApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492C230B2004415D00F1937E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DCE1FE2DE8400021078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DE21FE2DE8500021078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492C22FF2004412000F1937E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				492D1DF41FE2E1F500021078 /* MetLinkApi.swift */,
+				492C2328200441FF00F1937E /* MetLinkService.swift */,
+				492C232C20055AC800F1937E /* MetLinkData.swift */,
+				492C232A2004423400F1937E /* WebService.swift */,
+				492C2331200581C400F1937E /* Helpers.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		492C23032004415D00F1937E /* BusFinder Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				492C23042004415D00F1937E /* Interface.storyboard */,
+				492C23072004415D00F1937E /* Assets.xcassets */,
+				492C23092004415D00F1937E /* Info.plist */,
+			);
+			path = "BusFinder Watch App";
+			sourceTree = "<group>";
+		};
+		492C23122004415D00F1937E /* BusFinder Watch App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				492C23132004415D00F1937E /* InterfaceController.swift */,
+				492C232E2005771500F1937E /* BusTimesRowController.swift */,
+				492C23342006A0D200F1937E /* ComplicationController.swift */,
+				492C23152004415D00F1937E /* ExtensionDelegate.swift */,
+				492C23172004415D00F1937E /* NotificationController.swift */,
+				492C23192004415D00F1937E /* Assets.xcassets */,
+				492C231B2004415D00F1937E /* Info.plist */,
+				492C231C2004415D00F1937E /* PushNotificationPayload.apns */,
+			);
+			path = "BusFinder Watch App Extension";
+			sourceTree = "<group>";
+		};
+		492D1DC81FE2DE8400021078 = {
+			isa = PBXGroup;
+			children = (
+				492C23362006A3DE00F1937E /* BusFinder.ckcomplication */,
+				492D1DD31FE2DE8400021078 /* BusFinder */,
+				492C22FF2004412000F1937E /* Shared */,
+				492D1DE81FE2DE8500021078 /* BusFinderTests */,
+				492C23032004415D00F1937E /* BusFinder Watch App */,
+				492C23122004415D00F1937E /* BusFinder Watch App Extension */,
+				492D1DD21FE2DE8400021078 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492D1DD21FE2DE8400021078 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492D1DD11FE2DE8400021078 /* BusFinder.app */,
+				492D1DE51FE2DE8500021078 /* BusFinderTests.xctest */,
+				492C23022004415D00F1937E /* BusFinder Watch App.app */,
+				492C230E2004415D00F1937E /* BusFinder Watch App Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492D1DD31FE2DE8400021078 /* BusFinder */ = {
+			isa = PBXGroup;
+			children = (
+				492D1DD41FE2DE8400021078 /* AppDelegate.swift */,
+				492D1DD61FE2DE8400021078 /* ViewController.swift */,
+				492D1DD81FE2DE8400021078 /* Main.storyboard */,
+				492D1DDB1FE2DE8400021078 /* Assets.xcassets */,
+				492D1DDD1FE2DE8400021078 /* LaunchScreen.storyboard */,
+				492D1DE01FE2DE8400021078 /* Info.plist */,
+			);
+			path = BusFinder;
+			sourceTree = "<group>";
+		};
+		492D1DE81FE2DE8500021078 /* BusFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				492D1DE91FE2DE8500021078 /* BusFinderTests.swift */,
+				492D1DEB1FE2DE8500021078 /* Info.plist */,
+			);
+			path = BusFinderTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492C23012004415D00F1937E /* BusFinder Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492C23242004415D00F1937E /* Build configuration list for PBXNativeTarget "BusFinder Watch App" */;
+			buildPhases = (
+				492C23002004415D00F1937E /* Resources */,
+				492C23232004415D00F1937E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492C23112004415D00F1937E /* PBXTargetDependency */,
+			);
+			name = "BusFinder Watch App";
+			productName = "BusFinder Watch App";
+			productReference = 492C23022004415D00F1937E /* BusFinder Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		492C230D2004415D00F1937E /* BusFinder Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492C23202004415D00F1937E /* Build configuration list for PBXNativeTarget "BusFinder Watch App Extension" */;
+			buildPhases = (
+				492C230A2004415D00F1937E /* Sources */,
+				492C230B2004415D00F1937E /* Frameworks */,
+				492C230C2004415D00F1937E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BusFinder Watch App Extension";
+			productName = "BusFinder Watch App Extension";
+			productReference = 492C230E2004415D00F1937E /* BusFinder Watch App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		492D1DD01FE2DE8400021078 /* BusFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492D1DEE1FE2DE8500021078 /* Build configuration list for PBXNativeTarget "BusFinder" */;
+			buildPhases = (
+				492D1DCD1FE2DE8400021078 /* Sources */,
+				492D1DCE1FE2DE8400021078 /* Frameworks */,
+				492D1DCF1FE2DE8400021078 /* Resources */,
+				492C23272004415D00F1937E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492C231E2004415D00F1937E /* PBXTargetDependency */,
+			);
+			name = BusFinder;
+			productName = BusFinder;
+			productReference = 492D1DD11FE2DE8400021078 /* BusFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		492D1DE41FE2DE8500021078 /* BusFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492D1DF11FE2DE8500021078 /* Build configuration list for PBXNativeTarget "BusFinderTests" */;
+			buildPhases = (
+				492D1DE11FE2DE8500021078 /* Sources */,
+				492D1DE21FE2DE8500021078 /* Frameworks */,
+				492D1DE31FE2DE8500021078 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492D1DE71FE2DE8500021078 /* PBXTargetDependency */,
+			);
+			name = BusFinderTests;
+			productName = BusFinderTests;
+			productReference = 492D1DE51FE2DE8500021078 /* BusFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492D1DC91FE2DE8400021078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = 4DWare;
+				TargetAttributes = {
+					492C23012004415D00F1937E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					492C230D2004415D00F1937E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					492D1DD01FE2DE8400021078 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					492D1DE41FE2DE8500021078 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 492D1DD01FE2DE8400021078;
+					};
+				};
+			};
+			buildConfigurationList = 492D1DCC1FE2DE8400021078 /* Build configuration list for PBXProject "BusFinder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492D1DC81FE2DE8400021078;
+			productRefGroup = 492D1DD21FE2DE8400021078 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492D1DD01FE2DE8400021078 /* BusFinder */,
+				492D1DE41FE2DE8500021078 /* BusFinderTests */,
+				492C23012004415D00F1937E /* BusFinder Watch App */,
+				492C230D2004415D00F1937E /* BusFinder Watch App Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492C23002004415D00F1937E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C23082004415D00F1937E /* Assets.xcassets in Resources */,
+				492C23062004415D00F1937E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492C230C2004415D00F1937E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C231A2004415D00F1937E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DCF1FE2DE8400021078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C23372006A3DE00F1937E /* BusFinder.ckcomplication in Resources */,
+				492D1DDF1FE2DE8400021078 /* LaunchScreen.storyboard in Resources */,
+				492D1DDC1FE2DE8400021078 /* Assets.xcassets in Resources */,
+				492D1DDA1FE2DE8400021078 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DE31FE2DE8500021078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492C230A2004415D00F1937E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C23182004415D00F1937E /* NotificationController.swift in Sources */,
+				492C2332200581C400F1937E /* Helpers.swift in Sources */,
+				492C23162004415D00F1937E /* ExtensionDelegate.swift in Sources */,
+				492C233020057ADF00F1937E /* MetLinkApi.swift in Sources */,
+				492C23352006A0D200F1937E /* ComplicationController.swift in Sources */,
+				492C232F2005771500F1937E /* BusTimesRowController.swift in Sources */,
+				492C23142004415D00F1937E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DCD1FE2DE8400021078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492C2329200441FF00F1937E /* MetLinkService.swift in Sources */,
+				492C23332005828F00F1937E /* Helpers.swift in Sources */,
+				492D1DF51FE2E1F500021078 /* MetLinkApi.swift in Sources */,
+				492D1DD71FE2DE8400021078 /* ViewController.swift in Sources */,
+				492C232B2004423400F1937E /* WebService.swift in Sources */,
+				492C232D20055AC800F1937E /* MetLinkData.swift in Sources */,
+				492D1DD51FE2DE8400021078 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492D1DE11FE2DE8500021078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492D1DEA1FE2DE8500021078 /* BusFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		492C23112004415D00F1937E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492C230D2004415D00F1937E /* BusFinder Watch App Extension */;
+			targetProxy = 492C23102004415D00F1937E /* PBXContainerItemProxy */;
+		};
+		492C231E2004415D00F1937E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492C23012004415D00F1937E /* BusFinder Watch App */;
+			targetProxy = 492C231D2004415D00F1937E /* PBXContainerItemProxy */;
+		};
+		492D1DE71FE2DE8500021078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492D1DD01FE2DE8400021078 /* BusFinder */;
+			targetProxy = 492D1DE61FE2DE8500021078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		492C23042004415D00F1937E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492C23052004415D00F1937E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		492D1DD81FE2DE8400021078 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492D1DD91FE2DE8400021078 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		492D1DDD1FE2DE8400021078 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492D1DDE1FE2DE8400021078 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		492C23212004415D00F1937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = "BusFinder Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		492C23222004415D00F1937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = "BusFinder Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		492C23252004415D00F1937E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				IBSC_MODULE = BusFinder_Watch_App_Extension;
+				INFOPLIST_FILE = "BusFinder Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		492C23262004415D00F1937E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				IBSC_MODULE = BusFinder_Watch_App_Extension;
+				INFOPLIST_FILE = "BusFinder Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		492D1DEC1FE2DE8500021078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		492D1DED1FE2DE8500021078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		492D1DEF1FE2DE8500021078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = BusFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		492D1DF01FE2DE8500021078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = BusFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		492D1DF21FE2DE8500021078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = BusFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusFinder.app/BusFinder";
+			};
+			name = Debug;
+		};
+		492D1DF31FE2DE8500021078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 322WP4362D;
+				INFOPLIST_FILE = BusFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.4DWare.BusFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusFinder.app/BusFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492C23202004415D00F1937E /* Build configuration list for PBXNativeTarget "BusFinder Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492C23212004415D00F1937E /* Debug */,
+				492C23222004415D00F1937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492C23242004415D00F1937E /* Build configuration list for PBXNativeTarget "BusFinder Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492C23252004415D00F1937E /* Debug */,
+				492C23262004415D00F1937E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492D1DCC1FE2DE8400021078 /* Build configuration list for PBXProject "BusFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492D1DEC1FE2DE8500021078 /* Debug */,
+				492D1DED1FE2DE8500021078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492D1DEE1FE2DE8500021078 /* Build configuration list for PBXNativeTarget "BusFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492D1DEF1FE2DE8500021078 /* Debug */,
+				492D1DF01FE2DE8500021078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492D1DF11FE2DE8500021078 /* Build configuration list for PBXNativeTarget "BusFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492D1DF21FE2DE8500021078 /* Debug */,
+				492D1DF31FE2DE8500021078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492D1DC91FE2DE8400021078 /* Project object */;
+}

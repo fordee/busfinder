@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BusFinder_Watch_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="OXt-Rj-4Nd">
+                            <items>
+                                <picker height="39" alignment="left" focusStyle="stack" id="9PZ-Xq-BCJ">
+                                    <connections>
+                                        <action selector="onBusStopSelection:" destination="AgC-eL-Hgc" id="LI0-Xu-TfV"/>
+                                    </connections>
+                                </picker>
+                                <button width="35" height="34" alignment="center" verticalAlignment="center" backgroundImage="Refresh" id="bzu-J4-yiD">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                    <connections>
+                                        <action selector="onRefreshButton" destination="AgC-eL-Hgc" id="z3Q-1e-de0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="vRN-Qx-6lw">
+                            <items>
+                                <table alignment="left" id="3gQ-jG-ljn">
+                                    <items>
+                                        <tableRow identifier="BusTimes" id="7W4-5i-V7N" customClass="BusTimesRowController" customModule="BusFinder_Watch_App_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="lrc-Yk-FcK">
+                                                <items>
+                                                    <label alignment="left" text="Bus Time" id="xjl-nK-MqL">
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                    <label alignment="left" verticalAlignment="bottom" text="Label" id="73G-OP-VT7">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="busTimeLabel" destination="xjl-nK-MqL" id="ucw-d3-100"/>
+                                                <outlet property="busTimeStatusLabel" destination="73G-OP-VT7" id="mdc-76-SyQ"/>
+                                                <outlet property="rowGroup" destination="lrc-Yk-FcK" id="sgH-e8-56J"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <group width="1" height="100" alignment="left" id="nU8-jK-TSu">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Loading data..." id="HCt-E2-49v">
+                                    <color key="textColor" red="0.47134979175714287" green="0.47682479513265302" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="busStopPicker" destination="9PZ-Xq-BCJ" id="vcN-le-Y98"/>
+                        <outlet property="busTimesTable" destination="3gQ-jG-ljn" id="4Ei-eo-424"/>
+                        <outlet property="loadingGroup" destination="nU8-jK-TSu" id="Na3-sO-Iso"/>
+                        <outlet property="loadingGroupLabel" destination="HCt-E2-49v" id="6Y5-8D-gZc"/>
+                        <outlet property="resultsGroup" destination="vRN-Qx-6lw" id="Hlx-QR-7AN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="BusFinder_Watch_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

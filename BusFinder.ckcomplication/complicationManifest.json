@@ -1,0 +1,7 @@
+{
+  "supported complication families" : {
+    "1" : "917A6468-ABA7-49FC-89D7-1D840CDFDF6B.json",
+    "3" : "9F86E81D-D3F8-44DA-83F4-6BE5EF6B7D04.json"
+  },
+  "client ID" : "net.4DWare.BusFinder.watchkitapp.watchkitextension"
+}
